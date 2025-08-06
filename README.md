@@ -1,8 +1,5 @@
-from docx import Document
-
 # Project Master Plan Content
-content = """
-GreenRoute AKL — Project Master Plan
+## GreenRoute AKL — Project Master Plan
 
 1. Main Objectives
 - To create a data-powered, intelligent transportation platform for Auckland, empowering commuters to travel faster, smarter, and greener.
