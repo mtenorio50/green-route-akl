@@ -1,5 +1,6 @@
 # Project Master Plan Content
 ## GreenRoute AKL — Project Master Plan
+### GreenRoute AKL is an intelligent transport platform for Auckland that blends real-time data, predictive analytics, and carbon insights to help commuters travel smarter and city planners build a greener, more efficient city.
 
 1. Main Objectives
 - To create a data-powered, intelligent transportation platform for Auckland, empowering commuters to travel faster, smarter, and greener.
@@ -49,8 +50,6 @@ d. Planner Dashboard (for City/Transport Planners)
 - Frontend: Responsive React app for public and dashboard for planners.
 - ML: Predicts delays, estimates carbon footprint.
 
-(Simple block diagram can be added in README or design doc!)
-
 7. Future Features / Roadmap
 
 - User-generated reports (crowdsourced data)
@@ -72,29 +71,3 @@ d. Planner Dashboard (for City/Transport Planners)
 - Scaling ML predictions with growing data
 - User privacy/security for location data
 - Balancing MVP focus vs. feature creep
-
-10. Project Pitch
-
-GreenRoute AKL is an intelligent transport platform for Auckland that blends real-time data, predictive analytics, and carbon insights to help commuters travel smarter and city planners build a greener, more efficient city.
-"""
-
-# Create a new Word Document
-doc = Document()
-for line in content.strip().split("\n"):
-    if line.strip().startswith("GreenRoute AKL — Project Master Plan"):
-        doc.add_heading(line.strip(), 0)
-    elif line.strip().endswith(":"):
-        doc.add_heading(line.strip(), level=1)
-    elif line.strip().startswith("a.") or line.strip().startswith("b.") or line.strip().startswith("c.") or line.strip().startswith("d."):
-        doc.add_heading(line.strip(), level=2)
-    elif line.strip().startswith("- "):
-        doc.add_paragraph(line.strip(), style="List Bullet")
-    elif line.strip() == "":
-        continue
-    else:
-        doc.add_paragraph(line.strip())
-
-# Save the document
-file_path = '/mnt/data/GreenRoute_AKL_Master_Plan.docx'
-doc.save(file_path)
-file_path
