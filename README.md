@@ -2,6 +2,8 @@
 ## GreenRoute AKL — Project Master Plan
 ### GreenRoute AKL is an intelligent transport platform for Auckland that blends real-time data, predictive analytics, and carbon insights to help commuters travel smarter and city planners build a greener, more efficient city.
 
+### The name “GreenRoute AKL” was chosen because this project is all about helping Aucklanders (AKL) find the fastest, smartest, and greenest ways to travel. It’s not just a route planner; it’s a step toward a more sustainable Auckland, using real-time data and analytics to optimize commutes for both people and the planet
+
 1. Main Objectives
 - To create a data-powered, intelligent transportation platform for Auckland, empowering commuters to travel faster, smarter, and greener.
 - To provide city planners with actionable insights to improve public transport and reduce urban congestion and emissions.
@@ -71,3 +73,72 @@ d. Planner Dashboard (for City/Transport Planners)
 - Scaling ML predictions with growing data
 - User privacy/security for location data
 - Balancing MVP focus vs. feature creep
+
+# GreenRoute AKL – Project Roadmap
+
+## Phase 1: Foundation & Setup (Week 1–2)
+- Set up project repository and folder structure
+- Establish coding conventions and standards
+- Publish initial README, documentation, and project plan
+- Register and confirm access to required APIs (AT, NZTA, Council)
+- Onboard team members (if applicable)
+
+---
+
+## Phase 2: Data & Backend MVP (Week 2–5)
+- Develop data ingestion scripts for Auckland Transport, NZTA, Council datasets
+- Design and implement Supabase/PostgreSQL database schema
+- Scaffold FastAPI backend
+- Create REST endpoints for route planning, delay prediction, and carbon calculation
+- Integrate basic ML model for delay prediction
+- Set up authentication (Supabase Auth or JWT)
+
+---
+
+## Phase 3: Frontend MVP (Week 4–7)
+- Scaffold React app for both public and planner users
+- Create wireframes/mockups for journey planner and dashboard
+- Develop journey planner UI (trip input, map, results)
+- Integrate APIs: fetch and display real-time route and ETA information
+- Add carbon calculator to trip results page
+- Build planner dashboard UI (analytics, congestion maps)
+- Ensure responsive/mobile-friendly design
+
+---
+
+## Phase 4: Testing, Quality, & Deployment (Week 6–8)
+- Write unit and integration tests for backend and frontend
+- Perform manual QA for all main user flows
+- Conduct accessibility audit (WCAG)
+- Deploy backend (Railway/Render), frontend (Vercel/Netlify), and database (Supabase)
+- Complete documentation and setup guides
+
+---
+
+## Phase 5: Feedback & Iteration (Week 8–10)
+- Enable in-app feedback tools
+- Implement analytics for user actions and feature usage
+- Conduct user and planner interviews/surveys
+- Address major bugs and improvement requests
+- Plan/prioritize next sprint(s) based on real feedback
+
+---
+
+## Phase 6: Enhancement & Stretch Goals (Post-MVP, Week 10+)
+- Add user-generated incident reports
+- Implement gamified eco challenges or reward systems
+- Integrate micro-mobility/bike-share/ride-share routing
+- Convert to PWA/mobile app
+- Expand analytics and dashboard features
+- Prepare codebase for open-source collaboration and scaling
+
+---
+
+## Ongoing: Maintenance & Growth
+- Conduct regular security and privacy reviews
+- Report progress and impact to stakeholders
+- Optimize performance continuously
+- Plan for wider rollout (city-wide or national)
+
+
+
